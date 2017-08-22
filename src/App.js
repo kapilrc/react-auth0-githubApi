@@ -53,7 +53,7 @@ class App extends Component {
   }
 
   getProfile() {
-    if(!localStorage.getItem('idToken')){
+    if(localStorage.getItem('idToken')){
       this.setState({
         idToken: localStorage.getItem('idToken'),
         profile: JSON.parse(localStorage.getItem('profile'))
